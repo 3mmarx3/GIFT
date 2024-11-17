@@ -753,77 +753,6 @@
                       <div
                         class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-7"
                       >
-                        <div class="col-span-4">
-                          <div
-                            class="rounded-xl border bg-card text-card-foreground shadow"
-                          >
-                            <div
-                              class="flex flex-col items-stretch space-y-0 border-b p-0 sm:flex-row"
-                            >
-                              <div
-                                class="flex flex-1 flex-col justify-center gap-1 px-6 py-5 sm:py-6"
-                              >
-                                <h3
-                                  class="font-semibold leading-none tracking-tight"
-                                >
-                                  Bar Chart - Interactive
-                                </h3>
-                                <p class="text-sm text-muted-foreground">
-                                  Showing total visitors for the last 3 months
-                                </p>
-                              </div>
-                              <div class="flex">
-                                <button
-                                  data-active="true"
-                                  class="relative flex flex-1 flex-col justify-center gap-1 border-t px-6 py-4 text-left even:border-l data-[active=true]:bg-muted/50 sm:border-l sm:border-t-0 sm:px-8 sm:py-6"
-                                >
-                                  <span class="text-xs text-muted-foreground"
-                                    >Desktop</span
-                                  ><span
-                                    class="text-lg font-bold leading-none sm:text-3xl"
-                                    >24,828</span
-                                  ></button
-                                ><button
-                                  data-active="false"
-                                  class="relative flex flex-1 flex-col justify-center gap-1 border-t px-6 py-4 text-left even:border-l data-[active=true]:bg-muted/50 sm:border-l sm:border-t-0 sm:px-8 sm:py-6"
-                                >
-                                  <span class="text-xs text-muted-foreground"
-                                    >Mobile</span
-                                  ><span
-                                    class="text-lg font-bold leading-none sm:text-3xl"
-                                    >25,010</span
-                                  >
-                                </button>
-                              </div>
-                            </div>
-                            <div class="p-6 pt-0 px-2 sm:p-6">
-                              <div
-                                data-chart="chart-R8qqcvfakvaja"
-                                class="flex justify-center text-xs [&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-dot[stroke=&#x27;#fff&#x27;]]:stroke-transparent [&amp;_.recharts-layer]:outline-none [&amp;_.recharts-polar-grid_[stroke=&#x27;#ccc&#x27;]]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line-line]:stroke-border [&amp;_.recharts-sector[stroke=&#x27;#fff&#x27;]]:stroke-transparent [&amp;_.recharts-sector]:outline-none [&amp;_.recharts-surface]:outline-none aspect-auto h-[280px] w-full"
-                              >
-                                <style>
-                                  [data-chart="chart-R8qqcvfakvaja"] {
-                                    --color-desktop: hsl(var(--chart-1));
-                                    --color-mobile: hsl(var(--chart-2));
-                                  }
-                                  ,
-                                  .dark [data-chart="chart-R8qqcvfakvaja"] {
-                                    --color-desktop: hsl(var(--chart-1));
-                                    --color-mobile: hsl(var(--chart-2));
-                                  }
-                                </style>
-                                <div
-                                  class="recharts-responsive-container"
-                                  style="
-                                    width: 100%;
-                                    height: 100%;
-                                    min-width: 0;
-                                  "
-                                ></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                         <div
                           class="rounded-xl border bg-card text-card-foreground shadow col-span-4 md:col-span-3"
                         >
@@ -936,158 +865,947 @@
                         </div>
                         <div class="col-span-4">
                           <div
-                            class="rounded-xl border bg-card text-card-foreground shadow"
+                            dir="ltr"
+                            class="relative grid h-[calc(80vh-220px)] rounded-md border md:h-[calc(90dvh-240px)]"
+                            style="
+                              position: relative;
+                              --radix-scroll-area-corner-width: 0px;
+                              --radix-scroll-area-corner-height: 0px;
+                            "
                           >
-                            <div class="flex flex-col space-y-1.5 p-6">
-                              <h3
-                                class="font-semibold leading-none tracking-tight"
-                              >
-                                Area Chart - Stacked
-                              </h3>
-                              <p class="text-sm text-muted-foreground">
-                                Showing total visitors for the last 6 months
-                              </p>
-                            </div>
-                            <div class="p-6 pt-0">
-                              <div
-                                data-chart="chart-R9qqcvfakvaja"
-                                class="flex justify-center text-xs [&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-dot[stroke=&#x27;#fff&#x27;]]:stroke-transparent [&amp;_.recharts-layer]:outline-none [&amp;_.recharts-polar-grid_[stroke=&#x27;#ccc&#x27;]]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line-line]:stroke-border [&amp;_.recharts-sector[stroke=&#x27;#fff&#x27;]]:stroke-transparent [&amp;_.recharts-sector]:outline-none [&amp;_.recharts-surface]:outline-none aspect-auto h-[310px] w-full"
-                              >
-                                <style>
-                                  [data-chart="chart-R9qqcvfakvaja"] {
-                                    --color-desktop: hsl(var(--chart-1));
-                                    --color-mobile: hsl(var(--chart-2));
-                                  }
-                                  ,
-                                  .dark [data-chart="chart-R9qqcvfakvaja"] {
-                                    --color-desktop: hsl(var(--chart-1));
-                                    --color-mobile: hsl(var(--chart-2));
-                                  }
-                                </style>
-                                <div
-                                  class="recharts-responsive-container"
-                                  style="
-                                    width: 100%;
-                                    height: 100%;
-                                    min-width: 0;
-                                  "
-                                ></div>
-                              </div>
-                            </div>
-                            <div class="flex items-center p-6 pt-0">
-                              <div
-                                class="flex w-full items-start gap-2 text-sm"
-                              >
-                                <div class="grid gap-2">
-                                  <div
-                                    class="flex items-center gap-2 font-medium leading-none"
+                            <style>
+                              [data-radix-scroll-area-viewport] {
+                                scrollbar-width: none;
+                                -ms-overflow-style: none;
+                                -webkit-overflow-scrolling: touch;
+                              }
+                              [data-radix-scroll-area-viewport]::-webkit-scrollbar {
+                                display: none;
+                              }
+                            </style>
+                            <div
+                              data-radix-scroll-area-viewport=""
+                              class="h-full w-full rounded-[inherit]"
+                              style="overflow: scroll"
+                            >
+                              <div style="min-width: 100%; display: table">
+                                <div class="w-full overflow-auto">
+                                  <table
+                                    class="w-full caption-bottom text-sm relative"
                                   >
-                                    Trending up by 5.2% this month
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                      stroke="currentColor"
-                                      stroke-width="2"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      class="lucide lucide-trending-up h-4 w-4"
+                                    <thead class="[&amp;_tr]:border-b">
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                      >
+                                        <th
+                                          class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select all"
+                                          ></button>
+                                        </th>
+                                        <th
+                                          class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          NAME
+                                        </th>
+                                        <th
+                                          class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          COUNTRY
+                                        </th>
+                                        <th
+                                          class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          EMAIL
+                                        </th>
+                                        <th
+                                          class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          COMPANY
+                                        </th>
+                                        <th
+                                          class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          GENDER
+                                        </th>
+                                        <th
+                                          class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        ></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody
+                                      class="[&amp;_tr:last-child]:border-0"
                                     >
-                                      <polyline
-                                        points="22 7 13.5 15.5 8.5 10.5 2 17"
-                                      ></polyline>
-                                      <polyline
-                                        points="16 7 22 7 22 13"
-                                      ></polyline>
-                                    </svg>
-                                  </div>
-                                  <div
-                                    class="flex items-center gap-2 leading-none text-muted-foreground"
-                                  >
-                                    January - June 2024
-                                  </div>
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                        data-state="false"
+                                      >
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select row"
+                                          ></button>
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Noble
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          USA
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Garret_Kunde@hotmail.com
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Data Scientist
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          female
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                                            type="button"
+                                            id="radix-:r2e:"
+                                            aria-haspopup="menu"
+                                            aria-expanded="false"
+                                            data-state="closed"
+                                          >
+                                            <span class="sr-only"
+                                              >Open menu</span
+                                            ><svg
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="lucide lucide-ellipsis h-4 w-4"
+                                            >
+                                              <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="19"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="5"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                            </svg>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                        data-state="false"
+                                      >
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select row"
+                                          ></button>
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Hiram
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          USA
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Mossie_Luettgen@hotmail.com
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Data Scientist
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          female
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                                            type="button"
+                                            id="radix-:r2g:"
+                                            aria-haspopup="menu"
+                                            aria-expanded="false"
+                                            data-state="closed"
+                                          >
+                                            <span class="sr-only"
+                                              >Open menu</span
+                                            ><svg
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="lucide lucide-ellipsis h-4 w-4"
+                                            >
+                                              <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="19"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="5"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                            </svg>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                        data-state="false"
+                                      >
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select row"
+                                          ></button>
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Sterling
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          USA
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Linda.Waelchi18@hotmail.com
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Sales Manager
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          male
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                                            type="button"
+                                            id="radix-:r2i:"
+                                            aria-haspopup="menu"
+                                            aria-expanded="false"
+                                            data-state="closed"
+                                          >
+                                            <span class="sr-only"
+                                              >Open menu</span
+                                            ><svg
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="lucide lucide-ellipsis h-4 w-4"
+                                            >
+                                              <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="19"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="5"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                            </svg>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                        data-state="false"
+                                      >
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select row"
+                                          ></button>
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Marcelle
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          USA
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Priscilla23@gmail.com
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Product Manager
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          male
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                                            type="button"
+                                            id="radix-:r2k:"
+                                            aria-haspopup="menu"
+                                            aria-expanded="false"
+                                            data-state="closed"
+                                          >
+                                            <span class="sr-only"
+                                              >Open menu</span
+                                            ><svg
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="lucide lucide-ellipsis h-4 w-4"
+                                            >
+                                              <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="19"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="5"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                            </svg>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                        data-state="false"
+                                      >
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select row"
+                                          ></button>
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Geovany
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          USA
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Emilio.Turcotte@gmail.com
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Sales Manager
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          male
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                                            type="button"
+                                            id="radix-:r2m:"
+                                            aria-haspopup="menu"
+                                            aria-expanded="false"
+                                            data-state="closed"
+                                          >
+                                            <span class="sr-only"
+                                              >Open menu</span
+                                            ><svg
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="lucide lucide-ellipsis h-4 w-4"
+                                            >
+                                              <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="19"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="5"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                            </svg>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                        data-state="false"
+                                      >
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select row"
+                                          ></button>
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Merritt
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          USA
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Oma_Ward@gmail.com
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Marketing Manager
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          male
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                                            type="button"
+                                            id="radix-:r2o:"
+                                            aria-haspopup="menu"
+                                            aria-expanded="false"
+                                            data-state="closed"
+                                          >
+                                            <span class="sr-only"
+                                              >Open menu</span
+                                            ><svg
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="lucide lucide-ellipsis h-4 w-4"
+                                            >
+                                              <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="19"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="5"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                            </svg>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                        data-state="false"
+                                      >
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select row"
+                                          ></button>
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Judy
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          USA
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Kayden.Koelpin@yahoo.com
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Graphic Designer
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          male
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                                            type="button"
+                                            id="radix-:r2q:"
+                                            aria-haspopup="menu"
+                                            aria-expanded="false"
+                                            data-state="closed"
+                                          >
+                                            <span class="sr-only"
+                                              >Open menu</span
+                                            ><svg
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="lucide lucide-ellipsis h-4 w-4"
+                                            >
+                                              <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="19"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="5"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                            </svg>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                        data-state="false"
+                                      >
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select row"
+                                          ></button>
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Marcos
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          USA
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Elliot96@yahoo.com
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Sales Manager
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          male
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                                            type="button"
+                                            id="radix-:r2s:"
+                                            aria-haspopup="menu"
+                                            aria-expanded="false"
+                                            data-state="closed"
+                                          >
+                                            <span class="sr-only"
+                                              >Open menu</span
+                                            ><svg
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="lucide lucide-ellipsis h-4 w-4"
+                                            >
+                                              <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="19"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="5"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                            </svg>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                        data-state="false"
+                                      >
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select row"
+                                          ></button>
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Joesph
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          USA
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Wiley.McClure@gmail.com
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Marketing Manager
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          female
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                                            type="button"
+                                            id="radix-:r2u:"
+                                            aria-haspopup="menu"
+                                            aria-expanded="false"
+                                            data-state="closed"
+                                          >
+                                            <span class="sr-only"
+                                              >Open menu</span
+                                            ><svg
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="lucide lucide-ellipsis h-4 w-4"
+                                            >
+                                              <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="19"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="5"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                            </svg>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr
+                                        class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+                                        data-state="false"
+                                      >
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            type="button"
+                                            role="checkbox"
+                                            aria-checked="false"
+                                            data-state="unchecked"
+                                            value="on"
+                                            class="peer h-4 w-4 shrink-0 rounded-sm border border-primary shadow focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                                            aria-label="Select row"
+                                          ></button>
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Hudson
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          USA
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Chyna15@gmail.com
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          Sales Manager
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          male
+                                        </td>
+                                        <td
+                                          class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                        >
+                                          <button
+                                            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
+                                            type="button"
+                                            id="radix-:r30:"
+                                            aria-haspopup="menu"
+                                            aria-expanded="false"
+                                            data-state="closed"
+                                          >
+                                            <span class="sr-only"
+                                              >Open menu</span
+                                            ><svg
+                                              xmlns="http://www.w3.org/2000/svg"
+                                              width="24"
+                                              height="24"
+                                              viewBox="0 0 24 24"
+                                              fill="none"
+                                              stroke="currentColor"
+                                              stroke-width="2"
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              class="lucide lucide-ellipsis h-4 w-4"
+                                            >
+                                              <circle
+                                                cx="12"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="19"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                              <circle
+                                                cx="5"
+                                                cy="12"
+                                                r="1"
+                                              ></circle>
+                                            </svg>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-span-4 md:col-span-3">
-                          <div
-                            class="rounded-xl border bg-card text-card-foreground shadow flex flex-col"
-                          >
-                            <div
-                              class="flex flex-col space-y-1.5 p-6 items-center pb-0"
-                            >
-                              <h3
-                                class="font-semibold leading-none tracking-tight"
-                              >
-                                Pie Chart - Donut with Text
-                              </h3>
-                              <p class="text-sm text-muted-foreground">
-                                January - June 2024
-                              </p>
-                            </div>
-                            <div class="p-6 pt-0 flex-1 pb-0">
-                              <div
-                                data-chart="chart-Raaqcvfakvaja"
-                                class="flex justify-center text-xs [&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-dot[stroke=&#x27;#fff&#x27;]]:stroke-transparent [&amp;_.recharts-layer]:outline-none [&amp;_.recharts-polar-grid_[stroke=&#x27;#ccc&#x27;]]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line-line]:stroke-border [&amp;_.recharts-sector[stroke=&#x27;#fff&#x27;]]:stroke-transparent [&amp;_.recharts-sector]:outline-none [&amp;_.recharts-surface]:outline-none mx-auto aspect-square max-h-[360px]"
-                              >
-                                <style>
-                                  [data-chart="chart-Raaqcvfakvaja"] {
-                                    --color-chrome: hsl(var(--chart-1));
-                                    --color-safari: hsl(var(--chart-2));
-                                    --color-firefox: hsl(var(--chart-3));
-                                    --color-edge: hsl(var(--chart-4));
-                                    --color-other: hsl(var(--chart-5));
-                                  }
-                                  ,
-                                  .dark [data-chart="chart-Raaqcvfakvaja"] {
-                                    --color-chrome: hsl(var(--chart-1));
-                                    --color-safari: hsl(var(--chart-2));
-                                    --color-firefox: hsl(var(--chart-3));
-                                    --color-edge: hsl(var(--chart-4));
-                                    --color-other: hsl(var(--chart-5));
-                                  }
-                                </style>
-                                <div
-                                  class="recharts-responsive-container"
-                                  style="
-                                    width: 100%;
-                                    height: 100%;
-                                    min-width: 0;
-                                  "
-                                ></div>
-                              </div>
-                            </div>
-                            <div
-                              class="flex items-center p-6 pt-0 flex-col gap-2 text-sm"
-                            >
-                              <div
-                                class="flex items-center gap-2 font-medium leading-none"
-                              >
-                                Trending up by 5.2% this month
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  class="lucide lucide-trending-up h-4 w-4"
-                                >
-                                  <polyline
-                                    points="22 7 13.5 15.5 8.5 10.5 2 17"
-                                  ></polyline>
-                                  <polyline points="16 7 22 7 22 13"></polyline>
-                                </svg>
-                              </div>
-                              <div class="leading-none text-muted-foreground">
-                                Showing total visitors for the last 6 months
                               </div>
                             </div>
                           </div>
