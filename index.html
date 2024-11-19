@@ -82,12 +82,6 @@
                 data-sidebar="group"
                 class="relative flex w-full min-w-0 flex-col p-2"
               >
-                <div
-                  data-sidebar="group-label"
-                  class="flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium text-sidebar-foreground/70 outline-none ring-sidebar-ring transition-[margin,opa] duration-200 ease-linear focus-visible:ring-2 [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:shrink-0 group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0"
-                >
-                  Overview
-                </div>
                 <ul
                   data-sidebar="menu"
                   class="flex w-full min-w-0 flex-col gap-1"
@@ -122,8 +116,7 @@
                           y="16"
                           rx="1"
                         ></rect></svg
-                      ><span>Dashboard</span></a
-                    >
+                    ></a>
                   </li>
                   <li data-sidebar="menu-item" class="group/menu-item relative">
                     <a
@@ -149,8 +142,7 @@
                           d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"
                         ></path>
                         <circle cx="12" cy="7" r="4"></circle></svg
-                      ><span>Employee</span></a
-                    >
+                    ></a>
                   </li>
                   <li data-sidebar="menu-item" class="group/menu-item relative">
                     <a
@@ -177,8 +169,7 @@
                         ></path>
                         <path d="M3 6h18"></path>
                         <path d="M16 10a4 4 0 0 1-8 0"></path></svg
-                      ><span>Product</span></a
-                    >
+                    ></a>
                   </li>
                   <li
                     data-sidebar="menu-item"
@@ -208,21 +199,7 @@
                         class="lucide lucide-credit-card"
                       >
                         <rect width="20" height="14" x="2" y="5" rx="2"></rect>
-                        <line x1="2" x2="22" y1="10" y2="10"></line></svg
-                      ><span>Account</span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="lucide lucide-chevron-right ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90"
-                      >
-                        <path d="m9 18 6-6-6-6"></path>
+                        <line x1="2" x2="22" y1="10" y2="10"></line>
                       </svg>
                     </button>
                     <div data-state="open" id="radix-:R299kvaja:">
@@ -237,8 +214,7 @@
                             data-active="false"
                             class="flex h-7 min-w-0 -translate-x-px items-center gap-2 overflow-hidden rounded-md px-2 text-sidebar-foreground outline-none ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;&gt;span:last-child]:truncate [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:shrink-0 [&amp;&gt;svg]:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground text-sm group-data-[collapsible=icon]:hidden"
                             href="/dashboard/profile"
-                            ><span>Profile</span></a
-                          >
+                          ></a>
                         </li>
                         <li>
                           <a
@@ -247,8 +223,7 @@
                             data-active="false"
                             class="flex h-7 min-w-0 -translate-x-px items-center gap-2 overflow-hidden rounded-md px-2 text-sidebar-foreground outline-none ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&amp;&gt;span:last-child]:truncate [&amp;&gt;svg]:size-4 [&amp;&gt;svg]:shrink-0 [&amp;&gt;svg]:text-sidebar-accent-foreground data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground text-sm group-data-[collapsible=icon]:hidden"
                             href="/"
-                            ><span>Login</span></a
-                          >
+                          ></a>
                         </li>
                       </ul>
                     </div>
@@ -278,8 +253,7 @@
                         <circle cx="9" cy="9" r="2"></circle>
                         <path d="M7 21v-4a2 2 0 0 1 2-2h4"></path>
                         <circle cx="15" cy="15" r="2"></circle></svg
-                      ><span>Kanban</span></a
-                    >
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -303,15 +277,8 @@
                   >
                     <span
                       class="relative flex shrink-0 overflow-hidden h-8 w-8 rounded-lg"
-                      ><span
-                        class="flex h-full w-full items-center justify-center bg-muted rounded-lg"
-                        >JO</span
-                      ></span
-                    >
-                    <div class="grid flex-1 text-left text-sm leading-tight">
-                      <span class="truncate font-semibold">John</span
-                      ><span class="truncate text-xs">demo@gmail.com</span>
-                    </div>
+                    ></span>
+
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -331,13 +298,6 @@
                 </li>
               </ul>
             </div>
-            <button
-              data-sidebar="rail"
-              aria-label="Toggle Sidebar"
-              tabindex="-1"
-              title="Toggle Sidebar"
-              class="absolute inset-y-0 z-20 hidden w-4 -translate-x-1/2 transition-all ease-linear after:absolute after:inset-y-0 after:left-1/2 after:w-[2px] hover:after:bg-sidebar-border group-data-[side=left]:-right-4 group-data-[side=right]:left-0 sm:flex [[data-side=left]_&amp;]:cursor-w-resize [[data-side=right]_&amp;]:cursor-e-resize [[data-side=left][data-state=collapsed]_&amp;]:cursor-e-resize [[data-side=right][data-state=collapsed]_&amp;]:cursor-w-resize group-data-[collapsible=offcanvas]:translate-x-0 group-data-[collapsible=offcanvas]:after:left-full group-data-[collapsible=offcanvas]:hover:bg-sidebar [[data-side=left][data-collapsible=offcanvas]_&amp;]:-right-2 [[data-side=right][data-collapsible=offcanvas]_&amp;]:-left-2"
-            ></button>
           </div>
         </div>
       </div>
@@ -365,8 +325,8 @@
                 class="lucide lucide-panel-left"
               >
                 <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-                <path d="M9 3v18"></path></svg
-              ><span class="sr-only">Toggle Sidebar</span>
+                <path d="M9 3v18"></path>
+              </svg>
             </button>
             <div
               data-orientation="vertical"
@@ -620,7 +580,7 @@
                             class="p-6 flex flex-row items-center justify-between space-y-0 pb-2"
                           >
                             <h3 class="tracking-tight text-sm font-medium">
-                              Total Revenue
+                              عدد الطلبات
                             </h3>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -651,7 +611,7 @@
                             class="p-6 flex flex-row items-center justify-between space-y-0 pb-2"
                           >
                             <h3 class="tracking-tight text-sm font-medium">
-                              Subscriptions
+                              عدد العملاء
                             </h3>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -722,7 +682,7 @@
                             class="p-6 flex flex-row items-center justify-between space-y-0 pb-2"
                           >
                             <h3 class="tracking-tight text-sm font-medium">
-                              Active Now
+                              عدد الطلبات
                             </h3>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -752,11 +712,10 @@
                             <div class="flex items-start justify-between">
                               <div>
                                 <h2 class="text-3xl font-bold tracking-tight">
-                                  Employee (20)
+                                  الطلبات المتاحة (20)
                                 </h2>
                                 <p class="text-sm text-muted-foreground">
-                                  Manage employees (Server side table
-                                  functionalities.)
+                                  عدد الطلبات الموجوده الان
                                 </p>
                               </div>
                             </div>
@@ -825,27 +784,23 @@
                                               <th
                                                 class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
-                                                NAME
+                                                الاسم
+                                              </th>
+
+                                              <th
+                                                class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
+                                              >
+                                                البريد الالكتروني
                                               </th>
                                               <th
                                                 class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
-                                                COUNTRY
+                                                التاريخ والوقت
                                               </th>
                                               <th
                                                 class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
-                                                EMAIL
-                                              </th>
-                                              <th
-                                                class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                COMPANY
-                                              </th>
-                                              <th
-                                                class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                GENDER
+                                                حالة الطلب
                                               </th>
                                               <th
                                                 class="h-10 px-2 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
@@ -877,11 +832,7 @@
                                               >
                                                 Donato
                                               </td>
-                                              <td
-                                                class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                USA
-                                              </td>
+
                                               <td
                                                 class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
@@ -963,11 +914,7 @@
                                               >
                                                 Jaime
                                               </td>
-                                              <td
-                                                class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                USA
-                                              </td>
+
                                               <td
                                                 class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
@@ -1049,11 +996,7 @@
                                               >
                                                 Lane
                                               </td>
-                                              <td
-                                                class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                USA
-                                              </td>
+
                                               <td
                                                 class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
@@ -1135,11 +1078,7 @@
                                               >
                                                 Clarabelle
                                               </td>
-                                              <td
-                                                class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                USA
-                                              </td>
+
                                               <td
                                                 class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
@@ -1221,11 +1160,7 @@
                                               >
                                                 Margarita
                                               </td>
-                                              <td
-                                                class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                USA
-                                              </td>
+
                                               <td
                                                 class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
@@ -1307,11 +1242,7 @@
                                               >
                                                 Rita
                                               </td>
-                                              <td
-                                                class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                USA
-                                              </td>
+
                                               <td
                                                 class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
@@ -1393,11 +1324,7 @@
                                               >
                                                 Brown
                                               </td>
-                                              <td
-                                                class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                USA
-                                              </td>
+
                                               <td
                                                 class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
@@ -1479,11 +1406,7 @@
                                               >
                                                 Talon
                                               </td>
-                                              <td
-                                                class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                USA
-                                              </td>
+
                                               <td
                                                 class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
@@ -1565,11 +1488,7 @@
                                               >
                                                 Missouri
                                               </td>
-                                              <td
-                                                class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                USA
-                                              </td>
+
                                               <td
                                                 class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
@@ -1651,11 +1570,7 @@
                                               >
                                                 Rowena
                                               </td>
-                                              <td
-                                                class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
-                                              >
-                                                USA
-                                              </td>
+
                                               <td
                                                 class="p-2 align-middle [&amp;:has([role=checkbox])]:pr-0 [&amp;>[role=checkbox]]:translate-y-[2px]"
                                               >
@@ -1826,22 +1741,7 @@
                                       ><button
                                         class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
                                         aria-label="Go to next page"
-                                      >
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="24"
-                                          height="24"
-                                          viewBox="0 0 24 24"
-                                          fill="none"
-                                          stroke="currentColor"
-                                          stroke-width="2"
-                                          stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                          class="lucide lucide-chevron-right h-4 w-4"
-                                          aria-hidden="true"
-                                        >
-                                          <path d="m9 18 6-6-6-6"></path>
-                                        </svg></button
+                                      ></button
                                       ><button
                                         class="items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground hidden h-8 w-8 p-0 lg:flex"
                                         aria-label="Go to last page"
