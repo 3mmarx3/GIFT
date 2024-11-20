@@ -684,3 +684,10 @@ body {
 * {
   direction: rtl !important;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+body,
+* {
+  font-family: "Cairo", serif !important;
+}
