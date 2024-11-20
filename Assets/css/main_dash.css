@@ -984,9 +984,9 @@ body {
   height: fit-content;
 }
 
-.h-full {
+/* .h-full {
   height: 100%;
-}
+} */
 
 .h-px {
   height: 1px;
@@ -2023,7 +2023,7 @@ body {
 }
 
 .text-left {
-  text-align: left;
+  text-align: right;
 }
 
 .text-center {
@@ -3986,4 +3986,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+body {
+  direction: rtl !important;
+}
+
+* {
+  direction: rtl !important;
 }

@@ -24,7 +24,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
     <meta name="next-size-adjust" />
   </head>
-  <body class="overflow-hidden">
+  <body>
     <div
       style="--sidebar-width: 16rem; --sidebar-width-icon: 3rem"
       class="group/sidebar-wrapper flex min-h-svh w-full text-sidebar-foreground has-[[data-variant=inset]]:bg-sidebar"
@@ -34,13 +34,12 @@
         data-state="collapsed"
         data-collapsible="icon"
         data-variant="sidebar"
-        data-side="left"
       >
         <div
           class="relative h-svh w-[--sidebar-width] bg-transparent transition-[width] duration-200 ease-linear group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 group-data-[collapsible=icon]:w-[--sidebar-width-icon]"
         ></div>
         <div
-          class="fixed inset-y-0 z-10 hidden h-svh w-[--sidebar-width] transition-[left,right,width] duration-200 ease-linear md:flex left-0 group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] group-data-[collapsible=icon]:w-[--sidebar-width-icon] group-data-[side=left]:border-r group-data-[side=right]:border-l"
+          class="fixed inset-y-0 z-10 hidden h-svh w-[--sidebar-width] transition-[left,right,width] duration-200 ease-linear md:flex group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] group-data-[collapsible=icon]:w-[--sidebar-width-icon] group-data-[side=left]:border-r group-data-[side=right]:border-l"
         >
           <div
             data-sidebar="sidebar"
@@ -274,27 +273,7 @@
                     aria-haspopup="menu"
                     aria-expanded="false"
                     data-state="closed"
-                  >
-                    <span
-                      class="relative flex shrink-0 overflow-hidden h-8 w-8 rounded-lg"
-                    ></span>
-
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-chevrons-up-down ml-auto size-4"
-                    >
-                      <path d="m7 15 5 5 5-5"></path>
-                      <path d="m7 9 5-5 5 5"></path>
-                    </svg>
-                  </button>
+                  ></button>
                 </li>
               </ul>
             </div>
@@ -742,16 +721,6 @@
                                     --radix-scroll-area-corner-height: 0px;
                                   "
                                 >
-                                  <style>
-                                    [data-radix-scroll-area-viewport] {
-                                      scrollbar-width: none;
-                                      -ms-overflow-style: none;
-                                      -webkit-overflow-scrolling: touch;
-                                    }
-                                    [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                                      display: none;
-                                    }
-                                  </style>
                                   <div
                                     data-radix-scroll-area-viewport=""
                                     class="h-full w-full rounded-[inherit]"

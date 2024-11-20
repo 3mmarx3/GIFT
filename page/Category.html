@@ -237,79 +237,20 @@
                     </div>
                     <div class="p-6 pt-0">
                       <form class="space-y-8">
-                        <div class="space-y-6">
-                          <div class="mb-2 space-y-2 lg:mb-0 w-full">
-                            <label
-                              class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                              for=":rf2:-form-item"
-                              >اضافه صوره</label
-                            >
-                            <div
-                              class="relative flex flex-col gap-6 overflow-hidden"
-                            >
-                              <div
-                                role="presentation"
-                                tabindex="0"
-                                class="group relative grid h-52 w-full cursor-pointer place-items-center rounded-lg border-2 border-dashed border-muted-foreground/25 px-5 py-2.5 text-center transition hover:bg-muted/25 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                                id=":rf2:-form-item"
-                                aria-describedby=":rf2:-form-item-description"
-                                aria-invalid="false"
-                              >
-                                <input
-                                  accept="image/*"
-                                  multiple=""
-                                  tabindex="-1"
-                                  type="file"
-                                  style="display: none"
-                                />
-                                <div
-                                  class="flex flex-col items-center justify-center gap-4 sm:px-5"
-                                >
-                                  <div
-                                    class="rounded-full border border-dashed p-3"
-                                  >
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                      stroke="currentColor"
-                                      stroke-width="2"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      class="lucide lucide-upload size-7 text-muted-foreground"
-                                      aria-hidden="true"
-                                    >
-                                      <path
-                                        d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
-                                      ></path>
-                                      <polyline
-                                        points="17 8 12 3 7 8"
-                                      ></polyline>
-                                      <line
-                                        x1="12"
-                                        x2="12"
-                                        y1="3"
-                                        y2="15"
-                                      ></line>
-                                    </svg>
-                                  </div>
-                                  <div class="space-y-px">
-                                    <p
-                                      class="font-medium text-muted-foreground"
-                                    >
-                                      Drag 'n' drop files here, or click to
-                                      select files
-                                    </p>
-                                    <p class="text-sm text-muted-foreground/70">
-                                      You can upload 4 files (up to 4 MB each)
-                                    </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="mb-2 space-y-2 lg:mb-0">
+                          <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for=":rf7:-form-item"
+                          >
+                            التصنيف الاساسي</label
+                          ><textarea
+                            class="flex min-h-[60px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 resize-none"
+                            placeholder="اسم التصنيف"
+                            name="description"
+                            id=":rf7:-form-item"
+                            aria-describedby=":rf7:-form-item-description"
+                            aria-invalid="false"
+                          ></textarea>
                         </div>
 
                         <div class="mb-2 space-y-2 lg:mb-0">
@@ -362,18 +303,13 @@
                                   <th
                                     class="h-10 px-2 text-left align-middle font-medium text-muted-foreground"
                                   >
-                                    الصوره
-                                  </th>
-                                  <th
-                                    class="h-10 px-2 text-left align-middle font-medium text-muted-foreground"
-                                  >
-                                    الاسم
+                                    التصنيف الاساسي
                                   </th>
 
                                   <th
                                     class="h-10 px-2 text-left align-middle font-medium text-muted-foreground"
                                   >
-                                    السعر الكلي
+                                    التصنيف
                                   </th>
                                 </tr>
                               </thead>
@@ -382,39 +318,6 @@
                                   class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
                                   data-state="false"
                                 >
-                                  <td class="p-2 align-middle">
-                                    <div class="relative aspect-square">
-                                      <img
-                                        alt="Rustic Concrete Cheese"
-                                        loading="lazy"
-                                        decoding="async"
-                                        data-nimg="fill"
-                                        class="rounded-lg"
-                                        style="
-                                          position: absolute;
-                                          height: 100%;
-                                          width: 100%;
-                                          left: 0;
-                                          top: 0;
-                                          right: 0;
-                                          bottom: 0;
-                                          color: transparent;
-                                        "
-                                        sizes="100vw"
-                                        srcset="
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F1.png&amp;w=640&amp;q=75   640w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F1.png&amp;w=750&amp;q=75   750w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F1.png&amp;w=828&amp;q=75   828w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F1.png&amp;w=1080&amp;q=75 1080w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F1.png&amp;w=1200&amp;q=75 1200w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F1.png&amp;w=1920&amp;q=75 1920w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F1.png&amp;w=2048&amp;q=75 2048w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F1.png&amp;w=3840&amp;q=75 3840w
-                                        "
-                                        src="/_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F1.png&amp;w=3840&amp;q=75"
-                                      />
-                                    </div>
-                                  </td>
                                   <td class="p-2 align-middle">
                                     Rustic Concrete Cheese
                                   </td>
@@ -455,49 +358,15 @@
                                   data-state="false"
                                 >
                                   <td class="p-2 align-middle">
-                                    <div class="relative aspect-square">
-                                      <img
-                                        alt="Unbranded Frozen Pizza"
-                                        loading="lazy"
-                                        decoding="async"
-                                        data-nimg="fill"
-                                        class="rounded-lg"
-                                        style="
-                                          position: absolute;
-                                          height: 100%;
-                                          width: 100%;
-                                          left: 0;
-                                          top: 0;
-                                          right: 0;
-                                          bottom: 0;
-                                          color: transparent;
-                                        "
-                                        sizes="100vw"
-                                        srcset="
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F6.png&amp;w=640&amp;q=75   640w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F6.png&amp;w=750&amp;q=75   750w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F6.png&amp;w=828&amp;q=75   828w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F6.png&amp;w=1080&amp;q=75 1080w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F6.png&amp;w=1200&amp;q=75 1200w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F6.png&amp;w=1920&amp;q=75 1920w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F6.png&amp;w=2048&amp;q=75 2048w,
-                                          /_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F6.png&amp;w=3840&amp;q=75 3840w
-                                        "
-                                        src="/_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F6.png&amp;w=3840&amp;q=75"
-                                      />
-                                    </div>
+                                    Rustic Concrete Cheese
                                   </td>
-                                  <td class="p-2 align-middle">
-                                    Unbranded Frozen Pizza
-                                  </td>
-                                  <td class="p-2 align-middle">Groceries</td>
-                                  <td class="p-2 align-middle">184.69</td>
+                                  <td class="p-2 align-middle">Books</td>
 
                                   <td class="p-2 align-middle">
                                     <button
                                       class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
                                       type="button"
-                                      id="radix-:Rb6j5icvfakvaja:"
+                                      id="radix-:Rb1j5icvfakvaja:"
                                       aria-haspopup="menu"
                                       aria-expanded="false"
                                       data-state="closed"
@@ -522,45 +391,21 @@
                                     </button>
                                   </td>
                                 </tr>
+
                                 <tr
                                   class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
                                   data-state="false"
                                 >
                                   <td class="p-2 align-middle">
-                                    <div class="relative aspect-square">
-                                      <img
-                                        alt="Rustic Plastic Chicken"
-                                        loading="lazy"
-                                        decoding="async"
-                                        data-nimg="fill"
-                                        class="rounded-lg"
-                                        style="
-                                          position: absolute;
-                                          height: 100%;
-                                          width: 100%;
-                                          left: 0;
-                                          top: 0;
-                                          right: 0;
-                                          bottom: 0;
-                                          color: transparent;
-                                        "
-                                        src="/_next/image?url=https%3A%2F%2Fapi.slingacademy.com%2Fpublic%2Fsample-products%2F7.png&amp;w=3840&amp;q=75"
-                                      />
-                                    </div>
+                                    Rustic Concrete Cheese
                                   </td>
-                                  <td class="p-2 align-middle">
-                                    Rustic Plastic Chicken
-                                  </td>
-                                  <td class="p-2 align-middle">
-                                    Beauty Products
-                                  </td>
-                                  <td class="p-2 align-middle">314.79</td>
+                                  <td class="p-2 align-middle">Books</td>
 
                                   <td class="p-2 align-middle">
                                     <button
                                       class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
                                       type="button"
-                                      id="radix-:Rb7j5icvfakvaja:"
+                                      id="radix-:Rb1j5icvfakvaja:"
                                       aria-haspopup="menu"
                                       aria-expanded="false"
                                       data-state="closed"

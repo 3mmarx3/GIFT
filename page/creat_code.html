@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Inputs List with Search</title>
+
+  </head>
+  <body>
+
+   
+<main>
+     <h1>Dynamic Inputs List with Search</h1>
+    <h2>Total Values: <span id="value-count">0</span></h2>
+    <div>
+      <button onclick="addMultipleInputs()">Add Multiple Inputs</button>
+      <button onclick="addAllToList()">Save All</button>
+    </div>
+    <div>
+      <input id="search-input" type="text" placeholder="Search value" />
+      <button onclick="searchValue()">Search</button>
+    </div>
+    <div class="input-container" id="multi-input-container"></div>
+    <div class="input-container" id="input-container"></div>
+
+    <script>
+      let count = 0;
+      let multiInputCount = 0;
+
+      function updateValueCount() {
+        const totalValues = document.querySelectorAll(
+          "#input-container .row"
+        ).length;
+        document.getElementById("value-count").textContent = totalValues;
+      }
+
+      function addMultipleInputs() {
+        const container = document.getElementById("multi-input-container");
+        multiInputCount++;
+
+        const row = document.createElement("div");
+        row.className = "row";
+        row.id = `multi-row-${multiInputCount}`;
+
+        row.innerHTML = `
+                <input class="col" type="text" placeholder="Enter value ${multiInputCount}" id="multi-input-${multiInputCount}" />
+                <button onclick="removeMultiInput(${multiInputCount})">Remove</button>
+            `;
+
+        container.appendChild(row);
+      }
+
+      function removeMultiInput(id) {
+        const row = document.getElementById(`multi-row-${id}`);
+        row.remove();
+      }
+
+      function addAllToList() {
+        const container = document.getElementById("input-container");
+        const multiInputs = document.querySelectorAll(
+          "#multi-input-container input"
+        );
+
+        multiInputs.forEach((input) => {
+          const value = input.value.trim();
+
+          if (value) {
+            count++;
+            const row = document.createElement("div");
+            row.className = "row";
+            row.id = `row-${count}`;
+
+            row.innerHTML = `
+                        <div class="col">#${count}</div>
+                        <input class="col" type="text" value="${value}" id="input-${count}" readonly />
+                        <div class="actions col">
+                            <button onclick="editValue(${count})">Edit</button>
+                            <button onclick="saveValue(${count})" style="display:none;">Save</button>
+                            <button onclick="deleteValue(${count})">Delete</button>
+                            <button onclick="copyValue(${count})">Copy</button>
+                        </div>
+                    `;
+
+            container.appendChild(row);
+          }
+        });
+
+        document.getElementById("multi-input-container").innerHTML = "";
+        updateValueCount();
+      }
+
+      function editValue(id) {
+        const input = document.getElementById(`input-${id}`);
+        input.removeAttribute("readonly");
+        const saveBtn = document.querySelector(
+          `#row-${id} .actions button:nth-child(2)`
+        );
+        saveBtn.style.display = "inline-block";
+      }
+
+      function saveValue(id) {
+        const input = document.getElementById(`input-${id}`);
+        input.setAttribute("readonly", true);
+        const saveBtn = document.querySelector(
+          `#row-${id} .actions button:nth-child(2)`
+        );
+        saveBtn.style.display = "none";
+      }
+
+      function deleteValue(id) {
+        const row = document.getElementById(`row-${id}`);
+        row.remove();
+        updateValueCount();
+      }
+
+      function copyValue(id) {
+        const input = document.getElementById(`input-${id}`);
+        input.select();
+        navigator.clipboard
+          .writeText(input.value)
+          .then(() => alert("Value copied to clipboard!"))
+          .catch(() => alert("Failed to copy value."));
+      }
+
+      function searchValue() {
+        const searchInput = document
+          .getElementById("search-input")
+          .value.trim();
+        const rows = document.querySelectorAll("#input-container .row");
+
+        // إزالة التمييز السابق
+        rows.forEach((row) => {
+          row.classList.remove("highlight");
+        });
+
+        if (!searchInput) {
+          alert("Please enter a value to search.");
+          return;
+        }
+
+        let found = false;
+        rows.forEach((row) => {
+          const input = row.querySelector("input").value;
+          if (input.includes(searchInput)) {
+            row.classList.add("highlight");
+            found = true;
+          }
+        });
+
+        if (!found) {
+          alert("Value not found.");
+        }
+      }
+    </script>
+</main>
+
+  </body>
+</html>
