@@ -255,6 +255,14 @@
                            
                             <div class="flex flex-wrap items-center gap-4">
                                 <input  id="search-input"  class="flex h-9 rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 w-full md:max-w-sm" placeholder="Search name..." value="">
+
+                        <button
+                        class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
+                        type="submit"
+                        onclick="searchValue()"
+                      >
+                      بحث
+                      </button>
                               </div>                        
 
                         </select>
@@ -263,31 +271,27 @@
                           
                         </div>
 
-                        <button
-                          onclick="addMultipleInputs()"
-                          class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
-                          type="submit"
-                        >
+           <div class="ptn_code">
+            <button
+            onclick="addMultipleInputs()"
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
+            type="submit"
+          >
 انشاء كود للبطاقه
-                      </button>
+        </button>
+          <!--  -->
+
+          <button
+          onclick="addAllToList()"
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
+            type="submit"
+          >
+            حفظ
+          </button>
+           </div>
+
                         <!--  -->
 
-                        <button
-                        onclick="addAllToList()"
-                          class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
-                          type="submit"
-                        >
-                          حفظ
-                        </button>
-                        <!--  -->
-
-                        <button
-                          class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
-                          type="submit"
-                          onclick="searchValue()"
-                        >
-                        بحث
-                        </button>
                       </form>
 
                       <br />
@@ -539,6 +543,14 @@
         input {
             padding: 25px !important;
         }
+
+
+        form.space-y-8 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+  
       </style>
     </div>
   </body>
