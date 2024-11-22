@@ -45,22 +45,35 @@
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div class="mb-2 space-y-2 lg:mb-0">
                 <label for="categoriesـmian">التصنيف الاساسي</label>
-                <input
+
+                <select
+                  aria-hidden="true"
+                  tabindex="-1"
                   class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
-                  placeholder="التصنيف الاساسي"
-                  id="categoriesـmian"
-                  name="mainCategory"
-                />
+                >
+                  <option value=""></option>
+                  <option value="beauty">Beauty Products</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="clothing">Clothing</option>
+                  <option value="home">Home &amp; Garden</option>
+                  <option value="sports">Sports &amp; Outdoors</option>
+                </select>
               </div>
 
               <div class="mb-2 space-y-2 lg:mb-0">
                 <label for="categories">التصنيف </label>
-                <input
+                <select
+                  aria-hidden="true"
+                  tabindex="-1"
                   class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
-                  placeholder="التصنيف"
-                  id="categories"
-                  name="category"
-                />
+                >
+                  <option value=""></option>
+                  <option value="beauty">Beauty Products</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="clothing">Clothing</option>
+                  <option value="home">Home &amp; Garden</option>
+                  <option value="sports">Sports &amp; Outdoors</option>
+                </select>
               </div>
 
               <button
