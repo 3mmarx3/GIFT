@@ -9,7 +9,6 @@
     />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
     <link rel="stylesheet" href="../Assets/css/main_dash.css" />
-    <meta name="next-size-adjust" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
@@ -22,8 +21,6 @@
     </style>
   </head>
   <body>
-    <!--  -->
-
     <main class="h-full p-4 md:px-6">
       <div class="flex items-start justify-between">
         <div>
@@ -44,33 +41,32 @@
           </h3>
         </div>
         <div class="p-6 pt-0">
-          <form class="space-y-8">
+          <form id="addCategoryForm" class="space-y-8">
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
               <div class="mb-2 space-y-2 lg:mb-0">
                 <label for="categoriesـmian">التصنيف الاساسي</label>
-
                 <input
                   class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
                   placeholder="التصنيف الاساسي"
                   id="categoriesـmian"
-                  name="name"
+                  name="mainCategory"
                 />
               </div>
 
               <div class="mb-2 space-y-2 lg:mb-0">
                 <label for="categories">التصنيف </label>
-
                 <input
                   class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
                   placeholder="التصنيف"
                   id="categories"
-                  name="name"
+                  name="category"
                 />
               </div>
 
               <button
+                id="addCategoryBtn"
                 class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
-                type="submit"
+                type="button"
               >
                 اضافة التصنيف
               </button>
@@ -80,36 +76,50 @@
       </div>
       <br />
 
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-        <div class="rounded-xl border bg-card text-card-foreground shadow">
-          <div
-            class="p-6 flex flex-row items-center justify-between space-y-0 pb-2"
-          >
-            <h3 class="tracking-tight text-sm font-medium">عدد الاكواد</h3>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="h-4 w-4 text-muted-foreground"
-            >
+      <div
+        id="categoriesContainer"
+        class="grid gap-4 md:grid-cols-2 lg:grid-cols-4"
+      ></div>
+    </main>
+
+    <script>
+      const addCategoryBtn = document.getElementById("addCategoryBtn");
+      const categoriesContainer = document.getElementById(
+        "categoriesContainer"
+      );
+
+      addCategoryBtn.addEventListener("click", () => {
+        const mainCategory = document.getElementById("categoriesـmian").value;
+        const category = document.getElementById("categories").value;
+
+        if (!mainCategory || !category) {
+          alert("يرجى إدخال كل الحقول!");
+          return;
+        }
+
+        const newCategory = document.createElement("div");
+        newCategory.className =
+          "rounded-xl border bg-card text-card-foreground shadow";
+        newCategory.innerHTML = `
+          <div class="p-6 flex flex-row items-center justify-between space-y-0 pb-2">
+            <h3 class="tracking-tight text-sm font-medium">${mainCategory} / ${category}</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-4 w-4 text-muted-foreground">
               <rect width="20" height="14" x="2" y="5" rx="2"></rect>
               <path d="M2 10h20"></path>
             </svg>
           </div>
           <div class="p-6 pt-0">
             <div class="text-2xl font-bold">+12,234</div>
+
             <a href="./code.html">
               <p class="text-xs text-muted-foreground">اضافه كود جديد</p>
             </a>
           </div>
-        </div>
-      </div>
-    </main>
+        `;
+        categoriesContainer.appendChild(newCategory);
 
-    <!--  -->
+        document.getElementById("addCategoryForm").reset();
+      });
+    </script>
   </body>
 </html>
