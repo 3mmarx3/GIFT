@@ -240,22 +240,16 @@
                               class="relative flex flex-col gap-6 overflow-hidden"
                             >
                               <div
-                                role="presentation"
-                                tabindex="0"
                                 class="group relative grid h-52 w-full cursor-pointer place-items-center rounded-lg border-2 border-dashed border-muted-foreground/25 px-5 py-2.5 text-center transition hover:bg-muted/25 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                                id="img_inp"
-                                aria-describedby="img_inp-description"
-                                aria-invalid="false"
                               >
                                 <input
-                                  multiple=""
                                   tabindex="-1"
                                   type="file"
-                                  style="display: none"
                                   for="img_inp"
                                 />
                                 <div
                                   class="flex flex-col items-center justify-center gap-4 sm:px-5"
+                                  for="img_inp"
                                 >
                                   <div
                                     class="rounded-full border border-dashed p-3"
@@ -307,7 +301,6 @@
                         <div class="mb-2 space-y-2 lg:mb-0">
                           <label
                             class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                            for=":rf7:-form-item"
                             >اسم التصنيف</label
                           ><textarea
                             class="flex min-h-[60px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 resize-none"
