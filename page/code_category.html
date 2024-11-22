@@ -1,0 +1,115 @@
+<html lang="en" class="__className_1dd84e dark" style="color-scheme: dark">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Dashboard : Employees</title>
+    <meta
+      name="description"
+      content="Basic dashboard with Next.js and Shadcn"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16" />
+    <link rel="stylesheet" href="../Assets/css/main_dash.css" />
+    <meta name="next-size-adjust" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+    />
+    <style>
+      body,
+      * {
+        font-family: "Cairo", serif !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  -->
+
+    <main class="h-full p-4 md:px-6">
+      <div class="flex items-start justify-between">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight">تصنيف الاكواد</h2>
+          <br />
+          <p class="text-sm text-muted-foreground">
+            اضافه الاكواد علي حسب التصنيف
+          </p>
+        </div>
+      </div>
+      <br />
+      <div
+        class="rounded-xl border bg-card text-card-foreground shadow mx-auto w-full"
+      >
+        <div class="flex flex-col space-y-1.5 p-6">
+          <h3 class="tracking-tight text-left text-2xl font-bold">
+            اضافة تصنيف للاكواد
+          </h3>
+        </div>
+        <div class="p-6 pt-0">
+          <form class="space-y-8">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div class="mb-2 space-y-2 lg:mb-0">
+                <label for="categoriesـmian">التصنيف الاساسي</label>
+
+                <input
+                  class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                  placeholder="التصنيف الاساسي"
+                  id="categoriesـmian"
+                  name="name"
+                />
+              </div>
+
+              <div class="mb-2 space-y-2 lg:mb-0">
+                <label for="categories">التصنيف </label>
+
+                <input
+                  class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                  placeholder="التصنيف"
+                  id="categories"
+                  name="name"
+                />
+              </div>
+
+              <button
+                class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
+                type="submit"
+              >
+                اضافة التصنيف
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <br />
+
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-xl border bg-card text-card-foreground shadow">
+          <div
+            class="p-6 flex flex-row items-center justify-between space-y-0 pb-2"
+          >
+            <h3 class="tracking-tight text-sm font-medium">عدد الاكواد</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="h-4 w-4 text-muted-foreground"
+            >
+              <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+              <path d="M2 10h20"></path>
+            </svg>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="text-2xl font-bold">+12,234</div>
+            <a href="./code.html">
+              <p class="text-xs text-muted-foreground">اضافه كود جديد</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--  -->
+  </body>
+</html>
