@@ -277,6 +277,24 @@
                             aria-invalid="false"
                           ></textarea>
                         </div>
+
+                        <div class="mb-2 space-y-2 lg:mb-0">
+                          <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for=":rf7:-form-item"
+                            >صوره التصنيف</label
+                          >
+
+                          <input
+                            type="file"
+                            class="flex min-h-[60px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 resize-none"
+                            placeholder="اسم التصنيف"
+                            name="description"
+                            id=":rf7:-form-item"
+                            aria-describedby=":rf7:-form-item-description"
+                            aria-invalid="false"
+                          />
+                        </div>
                         <button
                           class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2"
                           type="submit"
@@ -303,102 +321,74 @@
                       >
                         <div style="min-width: 100%; display: table">
                           <div class="w-full overflow-auto">
-                            <table
-                              class="w-full caption-bottom text-sm relative"
-                            >
-                              <thead class="[&amp;_tr]:border-b"></thead>
-                              <tbody class="[&amp;_tr:last-child]:border-0">
-                                <tr
-                                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                                  data-state="false"
-                                >
-                                  <td class="p-2 align-middle">
-                                    التصنيف الاساسي
-                                  </td>
-                                  <td class="p-2 align-middle">التصنيف</td>
+                            <div class="grid_gap">
+                              <div class="card">
+                                <div class="imgboat">
+                                  <img src="../Assets/images/game.png" />
+                                </div>
 
-                                  <td class="p-2 align-middle">الحذف</td>
-                                </tr>
+                                <h2 class="titel_h2">اسم التصنيف</h2>
 
-                                <tr
-                                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                                  data-state="false"
-                                >
-                                  <td class="p-2 align-middle">
-                                    Rustic Concrete Cheese
-                                  </td>
-                                  <td class="p-2 align-middle">Books</td>
+                                <div class="coder">حذف</div>
+                              </div>
+                              <style>
+                                .card {
+                                  border-radius: 7px;
+                                  padding: 10px;
+                                  width: 200px;
+                                  background-color: #5d32f5;
+                                }
+                                .imgboat img {
+                                  height: 110px;
+                                  width: 200px;
+                                  border-radius: 6px;
+                                }
+                                .coder {
+                                  display: inline-block;
+                                  font-size: 9px;
+                                  font-family: sans-serif;
+                                  border: 1px solid rgb(207, 197, 197);
+                                  border-radius: 25px;
+                                  margin-top: 10px;
+                                  margin-left: 10px;
+                                  padding: 4px 6px;
+                                  background-color: rgba(128, 128, 128, 0.201);
+                                }
+                                .code {
+                                  display: inline-block;
+                                  font-size: 9px;
+                                  font-family: sans-serif;
+                                  border: 1px solid rgb(207, 197, 197);
+                                  border-radius: 25px;
+                                  margin-left: 10px;
+                                  margin-top: 10px;
+                                  padding: 4px 6px;
+                                  background-color: rgba(128, 128, 128, 0.201);
+                                }
+                                .button {
+                                  text-align: center;
+                                  background-color: rgba(119, 203, 203, 0.326);
+                                  color: blue;
+                                  position: relative;
+                                  margin: 15px 50px 0px 50px;
+                                  padding: 4px;
+                                  font-size: 10px;
+                                  font-family: sans-serif;
+                                  border: 1px solid rgba(0, 0, 255, 0.454);
+                                  border-radius: 25px;
+                                }
 
-                                  <td class="p-2 align-middle">
-                                    <button
-                                      class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
-                                      type="button"
-                                      id="radix-:Rb1j5icvfakvaja:"
-                                      aria-haspopup="menu"
-                                      aria-expanded="false"
-                                      data-state="closed"
-                                    >
-                                      <span class="sr-only">Open menu</span
-                                      ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-ellipsis h-4 w-4"
-                                      >
-                                        <circle cx="12" cy="12" r="1"></circle>
-                                        <circle cx="19" cy="12" r="1"></circle>
-                                        <circle cx="5" cy="12" r="1"></circle>
-                                      </svg>
-                                    </button>
-                                  </td>
-                                </tr>
+                                .titel_h2 {
+                                  margin: 20px 0;
+                                }
 
-                                <tr
-                                  class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
-                                  data-state="false"
-                                >
-                                  <td class="p-2 align-middle">
-                                    Rustic Concrete Cheese
-                                  </td>
-                                  <td class="p-2 align-middle">Books</td>
-
-                                  <td class="p-2 align-middle">
-                                    <button
-                                      class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-8 w-8 p-0"
-                                      type="button"
-                                      id="radix-:Rb1j5icvfakvaja:"
-                                      aria-haspopup="menu"
-                                      aria-expanded="false"
-                                      data-state="closed"
-                                    >
-                                      <span class="sr-only">Open menu</span
-                                      ><svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-ellipsis h-4 w-4"
-                                      >
-                                        <circle cx="12" cy="12" r="1"></circle>
-                                        <circle cx="19" cy="12" r="1"></circle>
-                                        <circle cx="5" cy="12" r="1"></circle>
-                                      </svg>
-                                    </button>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
+                                .grid_gap {
+                                  display: grid;
+                                  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                                  margin: 20px;
+                                }
+                              </style>
+                            </div>
                           </div>
                         </div>
                       </div>

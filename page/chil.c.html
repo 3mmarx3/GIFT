@@ -106,55 +106,7 @@
           </form>
         </div>
       </div>
-      <br />
 
-      <div
-        id="categoriesContainer"
-        class="grid gap-4 md:grid-cols-2 lg:grid-cols-4"
-      ></div>
-    </main>
 
-    <script>
-      const addCategoryBtn = document.getElementById("addCategoryBtn");
-      const categoriesContainer = document.getElementById(
-        "categoriesContainer"
-      );
-
-      addCategoryBtn.addEventListener("click", () => {
-        const mainCategory = document.getElementById("categories_main").value;
-        const subCategory = document.getElementById("categories_sub").value;
-        const innerCategory = document.getElementById("categories_inner").value;
-
-        if (!mainCategory || !subCategory || !innerCategory) {
-          alert("يرجى إدخال كل الحقول!");
-          return;
-        }
-
-        const newCategory = document.createElement("div");
-        newCategory.className =
-          "rounded-xl border bg-card text-card-foreground shadow";
-        newCategory.innerHTML = `
-          <div class="p-6 flex flex-row items-center justify-between space-y-0 pb-2">
-            <h3 class="tracking-tight text-sm font-medium">${mainCategory} / ${subCategory} / ${innerCategory}</h3>
-            <button class="delete-btn text-xs bg-red-500 text-white px-2 py-1 rounded">حذف</button>
-          </div>
-          <div class="p-6 pt-0">
-            <div class="text-2xl font-bold">+12,234</div>
-            <a href="./code.html">
-              <p class="text-xs text-muted-foreground">اضافه كود جديد</p>
-            </a>
-          </div>
-        `;
-        categoriesContainer.appendChild(newCategory);
-
-        newCategory
-          .querySelector(".delete-btn")
-          .addEventListener("click", () => {
-            categoriesContainer.removeChild(newCategory);
-          });
-
-        document.getElementById("addCategoryForm").reset();
-      });
-    </script>
   </body>
 </html>
